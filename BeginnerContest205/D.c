@@ -35,11 +35,8 @@ int main(void){
 	if(k < not_a_index){
 	    printf("%ld\n", not_a[k-1]);
 	}else{
-	    // 配列より外の時はn+k
-	    printf("%ld\n", (k-not_a_index)+n);
+	    // 配列より外の時はa[n]+(K-not_a_index)
+	    printf("%ld\n", (k-not_a_index)+a[k-1]);
 	}
     }
-
 }
-
-
